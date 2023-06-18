@@ -100,13 +100,13 @@ test_python_interpreter_set_incorrectly() {
         export test_shell=$SHELL
     fi
     outfilename="$WORKON_HOME/test_out.$$"
-    subshell_output=$(VIRTUALENVWRAPPER_PYTHON="$WORKON_HOME/no_wrappers/bin/python" $test_shell $return_to/virtualenvwrapper.sh >"$outfilename" 2>&1)
+    subshell_output=$(VIRTUALENVWRAPPER_PYTHON="$WORKON_HOME/no_wrappers/bin/python3" $test_shell $return_to/virtualenvwrapper.sh >"$outfilename" 2>&1)
     #echo "$subshell_output"
     cat "$outfilename" | sed "s/'//g" | grep -q "$expected" 2>&1
     found_it=$?
     #echo "$found_it"
     assertTrue "Expected \'$expected\', got: \'$(cat "$outfilename")\'" "[ $found_it -eq 0 ]"
-    assertFalse "Failed to detect invalid Python location" "VIRTUALENVWRAPPER_PYTHON=$VIRTUAL_ENV/bin/python virtualenvwrapper_run_hook initialize >/dev/null 2>&1"
+    assertFalse "Failed to detect invalid Python location" "VIRTUALENVWRAPPER_PYTHON=$VIRTUAL_ENV/bin/python3 virtualenvwrapper_run_hook initialize >/dev/null 2>&1"
     cd "$return_to"
     deactivate
 }

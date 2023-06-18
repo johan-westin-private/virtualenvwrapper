@@ -28,7 +28,7 @@ test_add2virtualenv () {
     assertTrue "No path insert code in $(cat $path_file)" "grep -q sys.__egginsert $path_file"
     # Check the path we inserted is actually at the top
     expected="$full_path"
-    actual=$($WORKON_HOME/pathtest/bin/python -c "import sys; sys.stdout.write(sys.path[1]+'\n')")
+    actual=$($WORKON_HOME/pathtest/bin/python3 -c "import sys; sys.stdout.write(sys.path[1]+'\n')")
     assertSame "$expected" "$actual"
     # Make sure the temporary file created
     # during the edit was removed
@@ -66,7 +66,7 @@ test_add2virtualenv_zsh_noclobber () {
     assertTrue "No path insert code in $(cat $path_file)" "grep -q sys.__egginsert $path_file"
     # Check the path we inserted is actually at the top
     expected="$full_path"
-    actual=$($WORKON_HOME/pathtest_noclobber/bin/python -c "import sys; sys.stdout.write(sys.path[1]+'\n')")
+    actual=$($WORKON_HOME/pathtest_noclobber/bin/python3 -c "import sys; sys.stdout.write(sys.path[1]+'\n')")
     assertSame "$expected" "$actual"
     # Make sure the temporary file created
     # during the edit was removed

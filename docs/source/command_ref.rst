@@ -32,7 +32,7 @@ activated after being initialized.
 
     $ workon
     $ mkvirtualenv mynewenv
-    New python executable in mynewenv/bin/python
+    New python executable in mynewenv/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
@@ -84,7 +84,7 @@ regardless of the value of ``VIRTUALENVWRAPPER_WORKON_CD``.
 
     $ mktmpenv
     Using real prefix '/Library/Frameworks/Python.framework/Versions/2.7'
-    New python executable in 1e513ac6-616e-4d56-9aa5-9d0a3b305e20/bin/python
+    New python executable in 1e513ac6-616e-4d56-9aa5-9d0a3b305e20/bin/python3
     Overwriting 1e513ac6-616e-4d56-9aa5-9d0a3b305e20/lib/python2.7/distutils/__init__.py 
     with new content
     Installing setuptools...............................................
@@ -187,7 +187,7 @@ Syntax::
 
     $ workon 
     $ mkvirtualenv source
-    New python executable in source/bin/python
+    New python executable in source/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
@@ -196,10 +196,10 @@ Syntax::
     Making script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/easy_install relative
     Making script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/easy_install-2.6 relative
     Making script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/pip relative
-    Script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/postactivate cannot be made relative (it's not a normal script that starts with #!/Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/python)
-    Script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/postdeactivate cannot be made relative (it's not a normal script that starts with #!/Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/python)
-    Script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/preactivate cannot be made relative (it's not a normal script that starts with #!/Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/python)
-    Script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/predeactivate cannot be made relative (it's not a normal script that starts with #!/Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/python)
+    Script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/postactivate cannot be made relative (it's not a normal script that starts with #!/Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/python3)
+    Script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/postdeactivate cannot be made relative (it's not a normal script that starts with #!/Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/python3)
+    Script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/preactivate cannot be made relative (it's not a normal script that starts with #!/Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/python3)
+    Script /Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/predeactivate cannot be made relative (it's not a normal script that starts with #!/Users/dhellmann/Devel/virtualenvwrapper/tmp/dest/bin/python3)
     (dest)$ workon 
     dest
     source
@@ -267,13 +267,13 @@ Saguir).
 
     $ workon 
     $ mkvirtualenv env1
-      New python executable in env1/bin/python
+      New python executable in env1/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
     done.
     (env1)$ mkvirtualenv env2
-    New python executable in env2/bin/python
+    New python executable in env2/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
@@ -321,7 +321,7 @@ Syntax::
     $ echo $VIRTUAL_ENV
 
     $ mkvirtualenv env1
-    New python executable in env1/bin/python
+    New python executable in env1/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
@@ -362,7 +362,7 @@ subdirectory.
 ::
 
     $ mkvirtualenv env1
-    New python executable in env1/bin/python
+    New python executable in env1/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
@@ -396,7 +396,7 @@ directory to change into.
 ::
 
     $ mkvirtualenv env1
-    New python executable in env1/bin/python
+    New python executable in env1/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
@@ -420,7 +420,7 @@ Syntax::
 ::
 
     $ mkvirtualenv env1
-    New python executable in env1/bin/python
+    New python executable in env1/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
@@ -483,7 +483,7 @@ output.
 ::
 
     $ mkvirtualenv env1
-    New python executable in env1/bin/python
+    New python executable in env1/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
@@ -526,7 +526,7 @@ create a virtual environment with the same name as the project.
 ::
 
     $ mkproject myproj
-    New python executable in myproj/bin/python
+    New python executable in myproj/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
@@ -561,14 +561,14 @@ virtualenv and project directory.  An association is made so that when
 ::
 
     $ mkproject myproj
-    New python executable in myproj/bin/python
+    New python executable in myproj/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................
     done.
     Creating /Users/dhellmann/Devel/myproj
     (myproj)$ mkvirtualenv myproj_new_libs
-    New python executable in myproj/bin/python
+    New python executable in myproj/bin/python3
     Installing setuptools.............................................
     ..................................................................
     ..................................................................

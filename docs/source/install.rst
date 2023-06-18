@@ -270,7 +270,7 @@ use and ``VIRTUALENVWRAPPER_VIRTUALENV`` to the full path of the
 ``virtualenv`` binary to use. Both variables *must* be set before
 sourcing ``virtualenvwrapper.sh``.  For example::
 
-    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
     export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
     source /usr/local/bin/virtualenvwrapper.sh
 

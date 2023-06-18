@@ -57,7 +57,7 @@ installed by pip or your package manager.
   virtualenvwrapper.user_scripts Creating /Users/dhellmann/Envs/env1/bin/predeactivate
   virtualenvwrapper.user_scripts Creating /Users/dhellmann/Envs/env1/bin/postdeactivate
   virtualenvwrapper.user_scripts Creating /Users/dhellmann/Envs/env1/bin/preactivate
-  virtualenvwrapper.user_scripts Creating /Users/dhellmann/Envs/env1/bin/postactivate  New python executable in env1/bin/python
+  virtualenvwrapper.user_scripts Creating /Users/dhellmann/Envs/env1/bin/postactivate  New python executable in env1/bin/python3
   (env1)$ ls $WORKON_HOME
   env1 hook.log
 
@@ -94,7 +94,7 @@ Of course we are not limited to a single virtualenv::
   virtualenvwrapper.user_scripts Creating /Users/dhellmann/Envs/env2/bin/predeactivate
   virtualenvwrapper.user_scripts Creating /Users/dhellmann/Envs/env2/bin/postdeactivate
   virtualenvwrapper.user_scripts Creating /Users/dhellmann/Envs/env2/bin/preactivate
-  virtualenvwrapper.user_scripts Creating /Users/dhellmann/Envs/env2/bin/postactivate  New python executable in env2/bin/python
+  virtualenvwrapper.user_scripts Creating /Users/dhellmann/Envs/env2/bin/postactivate  New python executable in env2/bin/python3
   (env2)$ ls $WORKON_HOME
   env1            env2            hook.log
 
@@ -123,7 +123,7 @@ created, letting you automatically install commonly-used tools.
 
   (env2)$ echo 'pip install sphinx' >> $WORKON_HOME/postmkvirtualenv
   (env3)$ mkvirtualenv env3
-  New python executable in env3/bin/python
+  New python executable in env3/bin/python3
   Installing setuptools...............................
   ....................................................
   ....................................................

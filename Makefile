@@ -8,12 +8,11 @@ help:
 	@echo "test           - run the test suite"
 	@echo "test-quick     - run the test suite for bash and one version of Python ($(PYTHON27))"
 
-.PHONY: sdist
-sdist: html
-	rm -f dist/*.gz
+.PHONY: dist
+dist: html
+	rm -f dist/*
 	rm -rf docs/website
-	python setup.py sdist
-	cp -v dist/*.gz ~/Desktop
+	python3 -m build --outdir=dist --sdist --wheel
 
 # Documentation
 .PHONY: html
@@ -29,18 +28,18 @@ docclean:
 register:
 	echo "USE upload target"
 	exit 1
-	python setup.py register
+	python3 setup.py register
 
 .PHONY: upload
 upload:
-	python setup.py sdist upload
+	python3 setup.py sdist upload
 
 # Testing
 test:
 	tox
 
 test-quick:
-	tox -e py27
+	tox -e py37
 
 develop:
-	python setup.py develop
+	python3 -m pip install --upgrade --editable ./

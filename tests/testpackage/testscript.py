@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """
 A test script
 """
 
-print "Hello world"
+print("Hello world")

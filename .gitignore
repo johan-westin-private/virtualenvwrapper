@@ -1,1 +1,11 @@
 /.idea/
+/.pytest_cache/
+/.00_trash/
+/dist/
+/virtualenvwrapper/_version.py
+/.eggs/
+/virtualenvwrapper.egg-info/
+/docs/build/
+/tests/testpackage/dist/
+/tests/testpackage/build/
+/tests/testpackage/testpackage.egg-info/
